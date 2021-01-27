@@ -28,13 +28,7 @@ namespace InsuranceClaim.Controllers
             var Claimlist = _iClaims.GetClaimByDate(inputDate);
             return Ok(Claimlist);
         }
-        [HttpGet]
-        [Route("GetName")]
-        public ActionResult<string> GetName(string name)
-        {
-           
-            return Ok("name");
-        }
+       
 
     }
 }
